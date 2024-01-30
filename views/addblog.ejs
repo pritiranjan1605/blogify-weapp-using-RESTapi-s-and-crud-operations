@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>homepage</title>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+        <form method="post" action="/blog" enctype="multipart/form-data">
+            
+            <div class="mb-3" style="margin-top: 20px;margin-right: 50px; margin-left: 50px;">
+
+                <label for="Title" class="form-label" style="font-weight: bold;">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="title" name="title">
+            </div>
+            <div class="mb-3" style="margin-top: 20px;margin-right: 50px; margin-left: 50px;">
+
+                <label for="Coverimage" class="form-label" style="font-weight: bold;">Cover Image</label>
+                <input type="file" class="form-control" id="coverimage" aria-describedby="title" name="coverimage">
+                <!-- <button type="submit" class="form-control">upload</button> -->
+            </div>
+            <div class="mb-3" style="margin-top: 20px;margin-right: 50px; margin-left: 50px;">
+
+                <label for="body" class="body" style="font-weight: bold;">Body</label>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px" name="body"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 15px; width: 100px;">Submit</button>
+        </form>
+
+        <%- include('./partials/script') %>
+</body>
+
+</html>
