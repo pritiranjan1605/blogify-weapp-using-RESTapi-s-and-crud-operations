@@ -1,4 +1,7 @@
-# Blogify Website
+# Blogify Website  
+
+## Live Link
+<a href="https://blogify-o7go.onrender.com">https://blogify-o7go.onrender.com</a>
 
 Blogify is a straightforward web application built using Node.js and Express, aimed at enabling users to effortlessly create and manage their blogs. The application incorporates user authentication, providing a secure environment for individuals to register, log in, and craft personalized blog posts.
 
